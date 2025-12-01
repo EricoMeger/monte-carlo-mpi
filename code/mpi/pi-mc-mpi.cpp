@@ -3,6 +3,7 @@
 #include <cmath>
 #include <chrono>
 #include <mpi.h>
+#include <iomanip>
 
 /**
  * The idea is to estimate the value of pi using a Monte Carlo simulation,
@@ -106,7 +107,7 @@ int main(int argc, char** argv) {
         double pi = 4.0 * double(n_circle_global) / double(n_total);
         double seconds = std::chrono::duration<double>(t1 - t0).count();
 
-        std::cout << "n=" << n_total << " pi=" << pi << " time=" << seconds << "s\n";
+        std::cout << std::fixed << "n=" << n_total << " pi=" << std::setprecision(15) << pi << " time=" << seconds << "s\n";
     }
 
     MPI_Finalize();

@@ -2,6 +2,7 @@
 #include <random>
 #include <cmath>
 #include <chrono>
+#include <iomanip>
 
 /**
  * The idea is to estimate the value of pi using a Monte Carlo simulation,
@@ -78,12 +79,12 @@ unsigned long number_in_circle(unsigned long n_total, double r = 0.5) {
 }
 
 int main() {
-    unsigned long n_total = 60000000000; // 60 bi -> ~624s
+    unsigned long n_total = 6000000000; // 60 bi -> ~624s
     auto t0 = std::chrono::high_resolution_clock::now();
     unsigned long n_circle = number_in_circle(n_total);
     auto t1 = std::chrono::high_resolution_clock::now();
     double pi = 4.0 * double(n_circle) / double(n_total);
     double seconds = std::chrono::duration<double>(t1 - t0).count();
-    std::cout << "n=" << n_total << " pi=" << pi << " time=" << seconds << "s\n";
+    std::cout << std::fixed << "n=" << n_total << " pi=" << std::setprecision(15) << pi << " time=" << seconds << "s\n";
     return 0;
 }
