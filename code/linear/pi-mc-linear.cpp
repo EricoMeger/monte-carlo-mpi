@@ -78,7 +78,7 @@ unsigned long number_in_circle(unsigned long n_total, double r = 0.5) {
 }
 
 int main() {
-    unsigned long n_total = 600000000; // 60 bi -> ~624s
+    unsigned long n_total = 60000000000; // 60 bi -> ~624s
     auto t0 = std::chrono::high_resolution_clock::now();
     unsigned long n_circle = number_in_circle(n_total);
     auto t1 = std::chrono::high_resolution_clock::now();

@@ -16,7 +16,7 @@ $(EXECUTABLE): $(OBJS)
 	$(CXX) $(OBJS) -o $@ $(LDLIBS)
 
 run:
-	mpirun -np 4 ./$(EXECUTABLE)
+	mpirun -np 2 ./$(EXECUTABLE)
 
 clean:
 	-rm -f *.o $(EXECUTABLE)

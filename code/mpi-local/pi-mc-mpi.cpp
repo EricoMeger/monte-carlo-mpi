@@ -78,7 +78,7 @@ unsigned long number_in_circle(unsigned long n_total, int rank, double r = 0.5) 
     return n_circle;
 }
 
-int main() {
+int main(int argc, char** argv) {
     MPI_Init(nullptr, nullptr);
 
     int rank, size;
@@ -86,6 +86,10 @@ int main() {
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
     unsigned long n_total = 60000000000; // 60 bi -> ~624s
+
+    if (argc > 1) {
+        n_total = static_cast<unsigned long>(std::strtoul(argv[1], nullptr, 10));
+    }
 
     unsigned long n_local = n_total / size; // we divide the number of samples for each rank
 
