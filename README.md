@@ -19,3 +19,5 @@ https://askubuntu.com/questions/1236553/mpich-installation
 https://www.mgaillard.fr/2022/03/18/compute-pi-monte-carlo-hpc.html 
 
 https://mathrule.wordpress.com/2011/01/27/mpi-calculation-of-pi-using-the-monte-carlo-method/
+
+
