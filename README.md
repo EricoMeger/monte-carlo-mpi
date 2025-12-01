@@ -20,4 +20,6 @@ https://www.mgaillard.fr/2022/03/18/compute-pi-monte-carlo-hpc.html
 
 https://mathrule.wordpress.com/2011/01/27/mpi-calculation-of-pi-using-the-monte-carlo-method/
 
+https://stackoverflow.com/questions/48835603/unable-to-use-all-cores-with-mpirun
 
+https://mpitutorial.com/tutorials/running-an-mpi-cluster-within-a-lan/
