@@ -1,4 +1,4 @@
-#makefile gotten from this article author:
+#makefile adapted from the author of this article:
 #https://mathrule.wordpress.com/2011/01/27/mpi-calculation-of-pi-using-the-monte-carlo-method/
 
 OBJS := pi-mc-mpi.o
