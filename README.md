@@ -81,8 +81,8 @@ To run the application across multiple computers (e.g., a Desktop and a Notebook
 
 3. **File Paths:** Ensure the executable is located at the exact same absolute path on all machines (or use a shared NFS directory).
 
-> Refer to: [Running an MPI Cluster within a LAN](#running-an-mpi-cluster-within-a-lan)
-
+> Refer to: [MPI Resources](#mpi-resources)
+> 
 ### Execution
 
 1. Create a hostfile (e.g., hosts) listing the IP addresses or hostnames and the number of slots (processes) for each:
