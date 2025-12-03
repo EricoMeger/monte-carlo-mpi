@@ -113,7 +113,7 @@ mpirun -np 6 --hostfile <hostfile> --use-hwthread-cpus ./pi-mc-mpi <particles>
 
 [Marsenne Twister Algorithm](https://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/emt.html)
 
-#### PI Resources
+#### MPI Resources
 
 [MPICH Installation - AskUbuntu](https://askubuntu.com/questions/1236553/mpich-installation)
 
